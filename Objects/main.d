@@ -27,3 +27,5 @@
 .\objects\main.o: C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\main.o: lowpass_filter.h
+.\objects\main.o: sine_generator.h

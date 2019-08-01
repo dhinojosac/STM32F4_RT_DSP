@@ -392,6 +392,26 @@
               <FileType>1</FileType>
               <FilePath>.\clock.c</FilePath>
             </File>
+            <File>
+              <FileName>lowpass_filter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lowpass_filter.c</FilePath>
+            </File>
+            <File>
+              <FileName>lowpass_filter.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lowpass_filter.h</FilePath>
+            </File>
+            <File>
+              <FileName>sine_generator.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sine_generator.c</FilePath>
+            </File>
+            <File>
+              <FileName>sine_generator.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\sine_generator.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

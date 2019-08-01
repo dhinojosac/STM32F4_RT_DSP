@@ -1,5 +1,5 @@
 Dependencies for Project 'stm32f4_rt_dsp', Target 'stm32f4': (DO NOT MODIFY !)
-F (.\main.c)(0x5D43000C)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F407VGTx-I.\RTE\_stm32f4-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc"-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DARM_MATH_CM4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.c)(0x5D430CEF)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F407VGTx-I.\RTE\_stm32f4-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc"-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DARM_MATH_CM4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A902E14)
 I (.\RTE\Device\STM32F407VGTx\stm32f4xx_hal_conf.h)(0x5ABE1A84)
 I (.\RTE\_stm32f4\RTE_Components.h)(0x5D42FED1)
@@ -28,6 +28,8 @@ I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Dri
 I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FE884)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEC1492)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEC1486)
+I (lowpass_filter.h)(0x5D430223)
+I (sine_generator.h)(0x5D430940)
 F (.\clock.c)(0x5D42FF1F)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F407VGTx-I.\RTE\_stm32f4-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc"-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DARM_MATH_CM4-o .\objects\clock.o --omf_browse .\objects\clock.crf --depend .\objects\clock.d)
 I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A902E14)
 I (.\RTE\Device\STM32F407VGTx\stm32f4xx_hal_conf.h)(0x5ABE1A84)
@@ -54,6 +56,24 @@ I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Dri
 I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5A902E14)
 I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A902E14)
 I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A902E14)
+F (.\lowpass_filter.c)(0x5D430387)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F407VGTx-I.\RTE\_stm32f4-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc"-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DARM_MATH_CM4-o .\objects\lowpass_filter.o --omf_browse .\objects\lowpass_filter.crf --depend .\objects\lowpass_filter.d)
+I (lowpass_filter.h)(0x5D430223)
+I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FE884)
+I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FE884)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEC1492)
+I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FE884)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEC1492)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEC1486)
+F (.\lowpass_filter.h)(0x5D430223)()
+F (.\sine_generator.c)(0x5D430A00)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F407VGTx-I.\RTE\_stm32f4-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc"-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DARM_MATH_CM4-o .\objects\sine_generator.o --omf_browse .\objects\sine_generator.crf --depend .\objects\sine_generator.d)
+I (sine_generator.h)(0x5D430940)
+I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FE884)
+I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FE884)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEC1492)
+I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FE884)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEC1492)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEC1486)
+F (.\sine_generator.h)(0x5D430940)()
 F (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib)(0x5C8BFAA8)()
 F (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c)(0x5A902E14)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F407VGTx-I.\RTE\_stm32f4-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-I"C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc"-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DARM_MATH_CM4-o .\objects\stm32f4xx_hal.o --omf_browse .\objects\stm32f4xx_hal.crf --depend .\objects\stm32f4xx_hal.d)
 I (C:\Users\Diego Hinojosa\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A902E14)
