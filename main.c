@@ -34,8 +34,8 @@ int main(void)
 	
 	while(1)
 	{
-		sine = sine_calc_sample_q15(&Signal_set);
-		noise = sine_calc_sample_q15(&Noise_set);
+		sine = sine_calc_sample_q15(&Signal_set)/2;
+		noise = sine_calc_sample_q15(&Noise_set)/6;
 		disturbed = noise + sine;
 		filtered = low_pass_filter(&disturbed);
 		HAL_Delay(1);

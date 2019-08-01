@@ -586,11 +586,11 @@ Image Symbol Table
     i.low_pass_filter                        0x0800139c   Section        0  lowpass_filter.o(i.low_pass_filter)
     i.low_pass_filter_init                   0x080013b8   Section        0  lowpass_filter.o(i.low_pass_filter_init)
     i.main                                   0x080013d8   Section        0  main.o(i.main)
-    i.sine_calc_sample_q15                   0x08001458   Section        0  sine_generator.o(i.sine_calc_sample_q15)
-    i.sine_generator_init_q15                0x08001474   Section        0  sine_generator.o(i.sine_generator_init_q15)
-    x$fpl$fpinit                             0x080015a8   Section       10  fpinit.o(x$fpl$fpinit)
-    $v0                                      0x080015a8   Number         0  fpinit.o(x$fpl$fpinit)
-    .constdata                               0x080015b2   Section       24  system_stm32f4xx.o(.constdata)
+    i.sine_calc_sample_q15                   0x08001468   Section        0  sine_generator.o(i.sine_calc_sample_q15)
+    i.sine_generator_init_q15                0x08001484   Section        0  sine_generator.o(i.sine_generator_init_q15)
+    x$fpl$fpinit                             0x080015b8   Section       10  fpinit.o(x$fpl$fpinit)
+    $v0                                      0x080015b8   Number         0  fpinit.o(x$fpl$fpinit)
+    .constdata                               0x080015c2   Section       24  system_stm32f4xx.o(.constdata)
     .data                                    0x20000000   Section       12  main.o(.data)
     .data                                    0x2000000c   Section       64  lowpass_filter.o(.data)
     .data                                    0x2000004c   Section        9  stm32f4xx_hal.o(.data)
@@ -828,17 +828,17 @@ Image Symbol Table
     SystemInit                               0x08001301   Thumb Code    82  system_stm32f4xx.o(i.SystemInit)
     low_pass_filter                          0x0800139d   Thumb Code    22  lowpass_filter.o(i.low_pass_filter)
     low_pass_filter_init                     0x080013b9   Thumb Code    20  lowpass_filter.o(i.low_pass_filter_init)
-    main                                     0x080013d9   Thumb Code   100  main.o(i.main)
-    sine_calc_sample_q15                     0x08001459   Thumb Code    26  sine_generator.o(i.sine_calc_sample_q15)
-    sine_generator_init_q15                  0x08001475   Thumb Code   290  sine_generator.o(i.sine_generator_init_q15)
-    _fp_init                                 0x080015a9   Thumb Code    10  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x080015b1   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x080015b1   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    AHBPrescTable                            0x080015b2   Data          16  system_stm32f4xx.o(.constdata)
-    APBPrescTable                            0x080015c2   Data           8  system_stm32f4xx.o(.constdata)
-    sinTable_f32                             0x080015cc   Data        2052  arm_common_tables.o(.rodata.sinTable_f32)
-    Region$$Table$$Base                      0x08001dd0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08001df0   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x080013d9   Thumb Code   116  main.o(i.main)
+    sine_calc_sample_q15                     0x08001469   Thumb Code    26  sine_generator.o(i.sine_calc_sample_q15)
+    sine_generator_init_q15                  0x08001485   Thumb Code   290  sine_generator.o(i.sine_generator_init_q15)
+    _fp_init                                 0x080015b9   Thumb Code    10  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x080015c1   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x080015c1   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    AHBPrescTable                            0x080015c2   Data          16  system_stm32f4xx.o(.constdata)
+    APBPrescTable                            0x080015d2   Data           8  system_stm32f4xx.o(.constdata)
+    sinTable_f32                             0x080015dc   Data        2052  arm_common_tables.o(.rodata.sinTable_f32)
+    Region$$Table$$Base                      0x08001de0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08001e00   Number         0  anon$$obj.o(Region$$Table)
     freq                                     0x20000000   Data           4  main.o(.data)
     filtered                                 0x20000004   Data           2  main.o(.data)
     noise                                    0x20000006   Data           2  main.o(.data)
@@ -864,9 +864,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000229
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x00001e4c, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00001e5c, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001df0, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001e00, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -963,36 +963,36 @@ Memory Map of the image
     0x08001374   0x08001374   0x00000028   Code   RO          433    i.__NVIC_SetPriority  stm32f4xx_hal_cortex.o
     0x0800139c   0x0800139c   0x0000001c   Code   RO          169    i.low_pass_filter   lowpass_filter.o
     0x080013b8   0x080013b8   0x00000020   Code   RO          170    i.low_pass_filter_init  lowpass_filter.o
-    0x080013d8   0x080013d8   0x00000080   Code   RO            5    i.main              main.o
-    0x08001458   0x08001458   0x0000001a   Code   RO          209    i.sine_calc_sample_q15  sine_generator.o
-    0x08001472   0x08001472   0x00000002   PAD
-    0x08001474   0x08001474   0x00000134   Code   RO          210    i.sine_generator_init_q15  sine_generator.o
-    0x080015a8   0x080015a8   0x0000000a   Code   RO         1261    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x080015b2   0x080015b2   0x00000018   Data   RO          983    .constdata          system_stm32f4xx.o
-    0x080015ca   0x080015ca   0x00000002   PAD
-    0x080015cc   0x080015cc   0x00000804   Data   RO         1134    .rodata.sinTable_f32  arm_cortexM4lf_math.lib(arm_common_tables.o)
-    0x08001dd0   0x08001dd0   0x00000020   Data   RO         1317    Region$$Table       anon$$obj.o
+    0x080013d8   0x080013d8   0x00000090   Code   RO            5    i.main              main.o
+    0x08001468   0x08001468   0x0000001a   Code   RO          209    i.sine_calc_sample_q15  sine_generator.o
+    0x08001482   0x08001482   0x00000002   PAD
+    0x08001484   0x08001484   0x00000134   Code   RO          210    i.sine_generator_init_q15  sine_generator.o
+    0x080015b8   0x080015b8   0x0000000a   Code   RO         1261    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x080015c2   0x080015c2   0x00000018   Data   RO          983    .constdata          system_stm32f4xx.o
+    0x080015da   0x080015da   0x00000002   PAD
+    0x080015dc   0x080015dc   0x00000804   Data   RO         1134    .rodata.sinTable_f32  arm_cortexM4lf_math.lib(arm_common_tables.o)
+    0x08001de0   0x08001de0   0x00000020   Data   RO         1317    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08001df0, Size: 0x0000005c, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08001e00, Size: 0x0000005c, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08001df0   0x0000000c   Data   RW            7    .data               main.o
-    0x2000000c   0x08001dfc   0x00000040   Data   RW          172    .data               lowpass_filter.o
-    0x2000004c   0x08001e3c   0x00000009   Data   RW          264    .data               stm32f4xx_hal.o
-    0x20000055   0x08001e45   0x00000003   PAD
-    0x20000058   0x08001e48   0x00000004   Data   RW          984    .data               system_stm32f4xx.o
+    0x20000000   0x08001e00   0x0000000c   Data   RW            7    .data               main.o
+    0x2000000c   0x08001e0c   0x00000040   Data   RW          172    .data               lowpass_filter.o
+    0x2000004c   0x08001e4c   0x00000009   Data   RW          264    .data               stm32f4xx_hal.o
+    0x20000055   0x08001e55   0x00000003   PAD
+    0x20000058   0x08001e58   0x00000004   Data   RW          984    .data               system_stm32f4xx.o
 
 
-    Execution Region ER_ZI (Exec base: 0x2000005c, Load base: 0x08001e4c, Size: 0x000006fc, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x2000005c, Load base: 0x08001e5c, Size: 0x000006fc, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x2000005c        -       0x00000048   Zero   RW            6    .bss                main.o
     0x200000a4        -       0x00000050   Zero   RW          171    .bss                lowpass_filter.o
     0x200000f4        -       0x00000060   Zero   RW         1191    .bss                c_w.l(libspace.o)
-    0x20000154   0x08001e4c   0x00000004   PAD
+    0x20000154   0x08001e5c   0x00000004   PAD
     0x20000158        -       0x00000200   Zero   RW          972    HEAP                startup_stm32f407xx.o
     0x20000358        -       0x00000400   Zero   RW          971    STACK               startup_stm32f407xx.o
 
@@ -1006,7 +1006,7 @@ Image component sizes
 
        186         10          0          0          0       1697   clock.o
         60         18          0         64         80       1951   lowpass_filter.o
-       140         28          0         12         72     642999   main.o
+       156         28          0         12         72     642999   main.o
        334         18          0          0          0       1889   sine_generator.o
         64         26        392          0       1536        900   startup_stm32f407xx.o
        214         36          0          9          0       5959   stm32f4xx_hal.o
@@ -1015,7 +1015,7 @@ Image component sizes
        100         18         24          4          0       1611   system_stm32f4xx.o
 
     ----------------------------------------------------------------------
-      3056        240        450         92       1688     697698   Object Totals
+      3072        240        450         92       1688     697698   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          8          0          2          3          0          0   (incl. Padding)
 
@@ -1077,15 +1077,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      5162        272       2502         92       1788     712511   Grand Totals
-      5162        272       2502         92       1788     712511   ELF Image Totals
-      5162        272       2502         92          0          0   ROM Totals
+      5178        272       2502         92       1788     712511   Grand Totals
+      5178        272       2502         92       1788     712511   ELF Image Totals
+      5178        272       2502         92          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 7664 (   7.48kB)
+    Total RO  Size (Code + RO Data)                 7680 (   7.50kB)
     Total RW  Size (RW Data + ZI Data)              1880 (   1.84kB)
-    Total ROM Size (Code + RO Data + RW Data)       7756 (   7.57kB)
+    Total ROM Size (Code + RO Data + RW Data)       7772 (   7.59kB)
 
 ==============================================================================
 
